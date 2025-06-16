@@ -1,13 +1,17 @@
-// components/Content.jsx
+import MainContent from "./MainContent";
+import RightContent from "./RightContent";
 export default function Content() {
   return (
-    <main className="flex-1 p-8 text-white rounded-r-[30px]">
-      <h1 className="mb-4 text-2xl font-bold">Welcome to Your Dashboard</h1>
-      <div className="grid grid-cols-3 gap-6">
-        <div className="bg-[#181818] rounded-xl p-6">Widget 1</div>
-        <div className="bg-[#181818] rounded-xl p-6">Widget 2</div>
-        <div className="bg-[#181818] rounded-xl p-6">Widget 3</div>
+    <div className="absolute bg-[#FFFFFF] rounded-[30px] flex gap-6 p-6 w-[1060px] h-[860px] shadow-lg top-5 left-96 overflow-hidden">
+      {/* Main Content */}
+      <div className="flex-1 bg-gray-50 rounded-[20px] p-4">
+        <MainContent />
       </div>
-    </main>
+
+      {/* Right Content */}
+      <div className="w-[300px] bg-gray-100 rounded-[20px] p-4">
+        <RightContent />
+      </div>
+    </div>
   );
 }
