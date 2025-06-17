@@ -30,16 +30,13 @@ export default function MainContent() {
         </div>
       </div>
 
-      {/* Bar Chart Placeholder */}
-      <div className="h-24 flex items-end gap-[4px] my-4">
-        {Array.from({ length: 20 }).map((_, i) => (
-          <div
-            key={i}
-            className={`w-2 rounded bg-blue-200 ${
-              i === 15 ? "h-[60%] bg-blue-500" : `h-[${20 + (i % 4) * 10}%]`
-            }`}
-          />
-        ))}
+      {/* Bar Chart Image */}
+      <div className="h-24 my-4">
+        <img
+          src="src/assets/bar-chart.png" // Update this to the correct path
+          alt="Bar Chart"
+          className="object-contain w-full h-full"
+        />
       </div>
 
       {/* Expenses List */}
