@@ -34,7 +34,7 @@ export default function RightContent() {
       {/* Tip Box */}
       <div className="flex flex-col items-center p-4 mt-24 text-center bg-white shadow-sm rounded-xl">
         <img
-          src="src/assets/banker-offering-loan.png"
+          src="public/banker-offering-loan.png"
           alt="Tips"
           className="w-32 h-32 mb-4"
         />

@@ -33,7 +33,7 @@ export default function MainContent() {
       {/* Bar Chart Image */}
       <div className="h-24 my-4">
         <img
-          src="src/assets/bar-chart.png" // Update this to the correct path
+          src="public/bar-chart.png" // Update this to the correct path
           alt="Bar Chart"
           className="object-contain w-full h-full"
         />
